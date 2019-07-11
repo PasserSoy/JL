@@ -1,0 +1,339 @@
+html,body {
+	/*background: url('http://img1.3lian.com/2015/w2/34/d/64.jpg') no-repeat;*/
+	background-size: cover;
+	width: 100%;
+	height: 100%;	
+	font-family: '字体管家细圆','microsoft yahei';
+
+}
+#wrap {
+	box-sizing:border-box;
+	width: 800px;
+	min-height: 1px;
+	margin: 0 auto;
+}
+#wrap:after {
+	content: '';
+	position: fixed;
+	left: 50%;
+	margin-left: 400px;
+	top: 0;
+	display: block;
+	width: 1px;
+	height: 100000px;
+	background-color: #000;
+}
+#wrap:before {
+	content: '';
+	position: fixed;
+	right: 50%;
+	margin-right: 400px;
+	top: 0;
+	display: block;
+	width: 1px;
+	height: 100000px;
+	background-color: #000;
+	z-index: 999;
+}
+
+.left {
+	width: 160px;
+	background: #3DB7C3;
+	float: left;
+	position: relative;
+	z-index: 9;
+}
+.left:after {
+    content: '';
+    display: block;
+    width: 160px;
+    height: 1000000px;
+    position: fixed;
+    top: 0;
+    z-index: -1;
+    background: #3DB7C3;
+}
+.left ul {
+    margin-top: 30px;
+    padding: 20px;
+    padding-right: 7px;
+}
+.right {
+	width: 640px;
+	float: left;
+	box-sizing: border-box;
+	padding: 30px;
+    padding-right: 0;
+	position: relative;
+}
+.right:after {
+    content: '';
+    display: block;
+    width: 640px;
+    height: 1000000px;
+    position: fixed;
+    top: 0;
+    margin-left: -30px;
+    /* background-image: url('../img/bk.png'); */
+    background-repeat: no-repeat;
+    background-position: -161px 80px;
+		background-size: 1220px 1000px;
+		background-color: #fff;
+    z-index: -1;
+    opacity: .2;
+}
+.left .hdimg {display: none;
+	width: 116px;
+	height: 120px;
+	margin: 15px 20px;
+	border: 2px solid #fff;
+	box-shadow: 1px 1px 30px rgba(255, 255, 255, 0.52);
+}
+.detail {
+    margin-top: 20px;
+}
+@font-face {
+    font-family: plume;
+    src: url('../font/plume.otf');
+}
+@font-face {
+    font-family: AdineKirnberg;
+    src: url('../font/AdineKirnber.TTF');
+}
+.resume {
+    font-size: 56px;
+    padding: 0 5px;
+    color: #fff;
+    font-family: plume,sans-serif;
+}
+.tith {
+    font-weight: bold;
+    color: #3E385F;
+    margin-left: -15px;    
+    white-space: nowrap;
+    font-family: 'AdineKirnberg';
+    font-size: 32px;
+    position: relative;
+}
+.tith:after {
+	content: '';
+	display: block;
+	width: 100%;
+	height: 1px;
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	background-image: linear-gradient(to right,#131313,transparent,#984141,transparent,#984141,transparent,#984141,transparent,#984141,transparent,#984141,transparent,#984141,transparent,#B75757,transparent,#131313);
+}
+.detail li {
+	font-size: 15px;
+	color: #fff;
+    padding: 10px 0;
+    white-space: nowrap;
+}
+li.detas.address {
+    margin-top: 15px;
+}
+.detail .detas i {
+	display: inline-block;
+	margin-right: 3px;
+	vertical-align: sub;
+	width: 20px;
+	height: 20px;
+	border-radius: 50%;
+	background-color: #fff;
+	background-size: 80%;
+	background-repeat: no-repeat;	
+	background-position:center;
+	transition: all .5s;
+}
+.detail .detas:hover i {
+	transform: rotateY(180deg);
+}
+.detail .address i {
+	background-image: url('../img/address.png');
+}
+.detail .tel i {
+	background-image: url('../img/tel.png');
+}
+.detail .qq i {
+	background-image: url('../img/qq.png');
+}
+@font-face {
+    font-family: ZDRAVO MARIA;
+    src: url('../font/maria.ttf');
+}
+.skill li {
+	font-size: 16px;
+	color: #fff;
+	font-family: 'ZDRAVO MARIA','Suave Script Alt','microsoft yahei';
+	margin: 10px 0;
+}
+.skill li ins {
+    display: block;
+    width: 0;
+    height: 10px;
+    margin: -3px 0 8px;
+    background-color: #06464C;
+}
+.skill .ps ins {
+	animation: skill1 1.5s forwards;
+}
+.skill .html ins {
+	animation: skill2 1.5s forwards;
+}
+.skill .css ins {
+	animation: skill3 1.5s forwards;
+}
+.skill .less ins {
+	animation: skill4 1.5s forwards;
+}
+.skill .js ins {
+	animation: skill5 1.5s forwards;
+}
+.skill .jquery ins {
+	animation: skill6 1.5s forwards;
+}
+.skill .vue ins {
+	animation: skill6 1.5s forwards;
+}
+.skill .svn ins {
+	animation: skill5 1.5s forwards;
+}
+
+.interest li {
+    font-size: 16px;
+    color: #fff;
+    font-family: 'ZDRAVO MARIA','Suave Script Alt','microsoft yahei';
+    margin: 20px 0;
+    padding-left: 26px;
+    position: relative;
+    line-height: 30px;
+}
+
+.interest ins {
+    display: block;
+    width: 24px;
+    height: 24px;
+    position: absolute;
+    left: -8px;
+    top: -1px;
+    background-repeat: no-repeat;
+		background-position: center center;
+		transition: all .8s;
+}
+.interest li:hover ins {
+	transform: rotate(360deg);
+}
+.interest .movie ins {
+	background-image: url('../img/movie.png');
+}
+.interest .game ins {
+	background-image: url('../img/game.png');
+}
+.interest .music ins {
+	background-image: url('../img/music.png');
+}
+.interest .anime ins {
+	background-image: url('../img/anime.png');
+}
+.interest .riding ins {
+	background-image: url('../img/riding.png');
+}
+.interest .climbing ins {
+	background-image: url('../img/climbing.png');
+}
+
+.right * {
+	font-family: 'microsoft yahei';
+    color: #090052;
+    font-size: 14px;
+}
+@font-face {
+    font-family: bige;
+    src: url('../font/逼格青春粗黑体简2.0.TTF');
+}
+.right h1 {
+    font-size: 25px;
+    font-weight: bold;
+		font-family: 'bige';
+}
+.right h2 {
+	font-size: 16px;
+}
+.right h3 {
+	font-size: 17px;
+	padding: 5px 0;
+	position: relative;
+}
+.right h3:after {
+    content: '';
+    display: block;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 1px;
+    background: linear-gradient(to right,red,#3DB7C3,#008C9A,#DED823,red,#504C4C,#06BF61);
+}
+.contentD {
+	margin-top: 22px;
+}
+.contentD li {
+	margin: 8px 0;
+	position: relative;
+}
+.contentD > li {
+    margin-bottom: 27px;
+}
+
+.contentD i {
+    display: inline-block;
+    position: absolute;
+    left: -20px;
+    top: 12px;
+    width: 0;
+    height: 0;
+    border-width: 5px 15px;
+    border-style: solid;
+    border-color: transparent transparent transparent #008C9A;
+} 
+
+/*技能动画*/
+@keyframes skill1 {
+	100% { width: 30px; }
+}
+
+@keyframes skill2 {
+	100% { width: 85px; }
+}
+
+@keyframes skill3 {
+	100% { width: 80px; }
+}
+
+@keyframes skill4 {
+	100% { width: 30px; }
+}
+
+@keyframes skill5 {
+	100% { width: 65px; }
+}
+
+@keyframes skill6 {
+	100% { width: 80px; }
+}
+.smallt {
+	margin-right: 20px;
+}
+.contentC {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+.contentC li {
+	width: 45%;
+	display: flex;
+	/* flex-wrap: wrap; */
+}
+
